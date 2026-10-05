@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f7f4ee 0%, #f2efe7 50%, #eeebe2 100%);
+  color: #4a423c;
+  font-family: 'Nunito', system-ui, sans-serif;
+}
+
+.font-heading {
+  font-family: 'Playfair Display', serif;
+}

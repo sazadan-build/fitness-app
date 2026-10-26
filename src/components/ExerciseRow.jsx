@@ -21,7 +21,7 @@ export default function ExerciseRow({ exercise, loggedSets, onLogSet, onRemoveSe
 
   return (
     <div className="py-3 border-b border-[#e5ddd0] last:border-b-0">
-      <div className="flex items-baseline justify-between">
+      <div className="flex items-baseline justify-between mb-1">
         <p className="text-sm font-medium text-[#4a423c]">{exercise.name}</p>
         <div className="flex items-center gap-3">
           <p className="text-xs text-[#8d8079]">
@@ -37,6 +37,9 @@ export default function ExerciseRow({ exercise, loggedSets, onLogSet, onRemoveSe
           )}
         </div>
       </div>
+      {exercise.cue && exercise.cue !== '—' && (
+        <p className="text-xs text-[#a39c8f] mb-2 italic">{exercise.cue}</p>
+      )}
 
       {showHistory && (
         <div className="mt-2 bg-[#f2ede2] rounded-lg p-2" style={{ width: '100%', height: 140 }}>
